@@ -9,13 +9,13 @@ function App() {
   return (
     <>
       <Nav />
-      <section>
+      <section id="aboutMe">
         <AboutMe />
       </section>
-      <section>
+      <section id="projects">
         <Projects />
       </section>
-      <section>
+      <section id="skills">
         <Skills />
       </section>
     </>

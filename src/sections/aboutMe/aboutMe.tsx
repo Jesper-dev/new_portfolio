@@ -8,7 +8,7 @@ import { useIsMobile } from "../../hooks/useIsMobile";
 export const AboutMe = () => {
   const device = useIsMobile();
   return (
-    <Flex id="aboutMe" direction="column" height="100%">
+    <Flex direction="column" height="100%">
       <Flex
         direction="column"
         align="flex-start"

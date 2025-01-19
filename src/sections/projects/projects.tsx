@@ -9,7 +9,7 @@ export const Projects = () => {
     });
   };
   return (
-    <Flex id="projects" direction="column" height="100%">
+    <Flex direction="column" height="100%">
       <h1>Projects</h1>
       <Flex direction="column" gap="5px">
         {getProjects()}

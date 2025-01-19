@@ -13,13 +13,7 @@ export const Skills = () => {
     "Working in a team",
   ];
   return (
-    <Flex
-      id="skills"
-      direction="column"
-      justify="center"
-      height="100%"
-      gap="30px"
-    >
+    <Flex direction="column" justify="center" height="100%" gap="30px">
       <h1>Skills</h1>
       {skillsList.map((skill) => {
         return <div className="skillContainer">{skill}</div>;
