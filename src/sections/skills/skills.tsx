@@ -8,7 +8,7 @@ export const Skills = () => {
     "TypeScript",
     "Sql",
     "C#",
-    "Figma",
+    "Figma and UI/UX",
     "SvelteKit",
     "Working in a team",
   ];
