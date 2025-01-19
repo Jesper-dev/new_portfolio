@@ -1,9 +1,10 @@
 .navContainer {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 120px;
 
     a {
-        font-size: 18px;
+        font-size: 1.2rem;
+        text-decoration: none;
     }
 }
