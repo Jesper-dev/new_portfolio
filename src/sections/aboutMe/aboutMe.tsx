@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./aboutMe.scss";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { useIsMobile } from "../../hooks/useIsMobile";
 
 export const AboutMe = () => {
+  const device = useIsMobile();
   return (
     <Flex direction="column" height="100%">
       <Flex
@@ -31,8 +33,10 @@ export const AboutMe = () => {
         </Flex>
       </Flex>
       <Flex
+        className="aboutMeTextContainer"
         direction="column"
-        width="30%"
+        // width={device === "Desktop" ? "30%" : "100%"}
+        padding={device === "Desktop" ? undefined : "8px"}
         align="flex-start"
         justify="center"
         height="100%"

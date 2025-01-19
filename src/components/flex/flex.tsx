@@ -11,6 +11,7 @@ interface FlexProps extends PropsWithChildren {
   align?: "flex-start" | "center" | "flex-end";
   padding?: string;
   backgroundColor?: string;
+  className?: string;
 }
 
 export const Flex = ({
@@ -23,6 +24,7 @@ export const Flex = ({
   padding,
   height,
   backgroundColor,
+  className,
 }: FlexProps) => {
   const classnames = classNames({
     "flex-container": true,
@@ -32,7 +34,7 @@ export const Flex = ({
 
   return (
     <div
-      className={`${classnames}`}
+      className={`${classnames} ${className}`}
       style={{
         width: width,
         height: height,

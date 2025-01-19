@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { AboutMe } from "./sections/aboutMe/aboutMe";
 import "./App.scss";
+import { Nav } from "./components/nav/nav";
 
 function App() {
   return (
-    <section>
-      <AboutMe />
-    </section>
+    <>
+      <Nav />
+      <section>
+        <AboutMe />
+      </section>
+    </>
   );
 }
 
