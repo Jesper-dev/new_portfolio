@@ -10,7 +10,7 @@ export const Skills = () => {
     "C#",
     "Figma",
     "SvelteKit",
-    "Working in team",
+    "Working in a team",
   ];
   return (
     <Flex
