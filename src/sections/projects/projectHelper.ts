@@ -7,7 +7,7 @@ export type Project = {
 export const projectsList: Project[] = [
   {
     name: "What should I play",
-    url: "",
+    url: "https://what-should-i-play-rc161ij5w-jesperkyhs-projects.vercel.app/",
     description: "A simple project I made to learn some basic SvelteKit",
   },
   {
