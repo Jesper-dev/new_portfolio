@@ -3,8 +3,16 @@
     left: 0;
     top: 120px;
 
-    a {
-        font-size: 1.2rem;
-        text-decoration: none;
+    #selected {
+        background-color: #202020;
+    }
+
+    button {
+        outline: none;
+        border: 1px solid #b6b6b6;
+        border-radius: 4px;
+        padding: 6px 18px;
+        font-size: 0.9rem;
+        cursor: pointer;   
     }
 }

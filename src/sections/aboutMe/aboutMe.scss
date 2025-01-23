@@ -13,6 +13,13 @@ a {
 
 
 .aboutMeTextContainer {
+    .headline {
+        text-decoration: underline;
+    }
+    .aboutMeText {
+        font-size: 18px;
+        font-weight: bold;
+    }
     @media screen and (min-width: 1280px) {
         width: 30%;
     }
@@ -21,12 +28,5 @@ a {
     }
     @media screen and (max-width: 768px) and (min-width: 481px) {
         width: 90%;
-    }
-    .headline {
-        text-decoration: underline;
-    }
-    .aboutMeText {
-        font-size: 18px;
-        font-weight: bold;
     }
 }

@@ -9,11 +9,8 @@ export const Projects = () => {
     });
   };
   return (
-    <Flex direction="column" height="100%">
-      <h1>Projects</h1>
-      <Flex direction="column" gap="5px">
-        {getProjects()}
-      </Flex>
+    <Flex direction="column" height="100%" gap="5px">
+      {getProjects()}
     </Flex>
   );
 };
