@@ -2,6 +2,7 @@ import { Flex } from "../flex/flex";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons";
+import "./pageHeader.scss";
 
 export const PageHeader = () => {
   return (
