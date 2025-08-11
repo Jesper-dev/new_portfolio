@@ -22,7 +22,7 @@ export const AboutMe = () => {
           width="100%"
           justify="flex-start"
         >
-          <h2 className="headline">Born in 2000 in Uppsala, Sweden.</h2>
+          <h2 className="headline">Born 2000 in Uppsala, Sweden.</h2>
         </Flex>
         <p className="aboutMeText">
           I’m passionate about crafting visually appealing and innovative

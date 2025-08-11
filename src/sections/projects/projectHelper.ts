@@ -6,6 +6,12 @@ export type Project = {
 
 export const projectsList: Project[] = [
   {
+    name: "League auto chat",
+    url: "https://github.com/Jesper-dev/leagueAutoChat",
+    description:
+      "Python project which lets you automatically send text messages in chat.",
+  },
+  {
     name: "What should I play",
     url: "https://what-should-i-play-rc161ij5w-jesperkyhs-projects.vercel.app/",
     description: "A simple project I made to learn some basic SvelteKit",
