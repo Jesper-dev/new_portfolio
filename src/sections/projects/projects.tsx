@@ -30,7 +30,10 @@ export const Projects = () => {
   return (
     <Flex
       direction="column"
-      height={device === "Mobile" ? "700px" : "500px"}
+      width="100%"
+      height={device === "Mobile" ? "700px" : "100%"}
+      justify={device === "Mobile" ? undefined : "center"}
+      align="center"
       gap="16px"
       overflow
     >
