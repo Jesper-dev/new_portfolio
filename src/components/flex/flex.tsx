@@ -19,6 +19,7 @@ interface FlexProps extends PropsWithChildren {
   backgroundColor?: string;
   className?: string;
   id?: string;
+  overflow?: boolean;
 }
 
 export const Flex = ({
@@ -33,6 +34,7 @@ export const Flex = ({
   backgroundColor,
   className,
   id,
+  overflow,
 }: FlexProps) => {
   const classnames = classNames({
     "flex-container": true,
@@ -53,6 +55,7 @@ export const Flex = ({
         justifyContent: justify,
         padding: padding,
         backgroundColor: backgroundColor,
+        overflow: overflow ? "auto" : undefined,
       }}
     >
       {children}

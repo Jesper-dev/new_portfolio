@@ -31,7 +31,7 @@ function App() {
         selectedSection={section}
       />
       <section>
-        <Flex height="100%" justify="center" align="center">
+        <Flex height="100%" align="center">
           {renderContent()}
         </Flex>
       </section>
