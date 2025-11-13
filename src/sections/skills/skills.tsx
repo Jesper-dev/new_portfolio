@@ -2,16 +2,7 @@ import { Flex } from "../../components/flex/flex";
 import "./skills.scss";
 
 export const Skills = () => {
-  const skillsList = [
-    "React",
-    "JavaScript",
-    "TypeScript",
-    "Sql",
-    "C#",
-    "Figma and UI/UX",
-    "SvelteKit",
-    "Working in a team",
-  ];
+  const skillsList = ["React", "JavaScript", "TypeScript", "Sql", "C#"];
   return (
     <Flex
       direction="column"

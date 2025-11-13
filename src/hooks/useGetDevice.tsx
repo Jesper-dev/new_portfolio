@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const useIsMobile = () => {
+export const useGetDevice = () => {
   const [device, setDevice] = useState<"Mobile" | "Tablet" | "Desktop">(
     "Desktop"
   );

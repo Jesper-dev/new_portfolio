@@ -1,15 +1,24 @@
 import { Flex } from "../../components/flex/flex";
 import { Project } from "./projectHelper";
+
 import "./project.scss";
+import { useGetDevice } from "../../hooks/useGetDevice";
 
 type ProjecProps = {
   project: Project;
 };
 
 export const ProjectComp = ({ project }: ProjecProps) => {
+  const device = useGetDevice();
   return (
     <Flex className="projectContainer" direction="column">
-      <Flex gap="10px" align="center" width="100%" justify="space-between">
+      <Flex
+        gap="10px"
+        align="center"
+        width="100%"
+        justify="space-between"
+        direction={device === "Desktop" ? "row" : "column-reverse"}
+      >
         <p>{project.description}</p>
         <h3>{project.name}</h3>
       </Flex>

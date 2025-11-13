@@ -4,7 +4,7 @@ export type Project = {
   description: string;
 };
 
-export const projectsList: Project[] = [
+export const newProjectsList: Project[] = [
   {
     name: "League auto chat",
     url: "https://github.com/Jesper-dev/leagueAutoChat",
@@ -16,6 +16,9 @@ export const projectsList: Project[] = [
     url: "https://what-should-i-play-rc161ij5w-jesperkyhs-projects.vercel.app/",
     description: "A simple project I made to learn some basic SvelteKit",
   },
+];
+
+export const oldProjectsList: Project[] = [
   {
     name: "Lets vest",
     url: "https://lets-vest.surge.sh/",

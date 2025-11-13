@@ -6,7 +6,7 @@ interface FlexProps extends PropsWithChildren {
   width?: string;
   height?: string;
   gap?: string;
-  direction?: "column" | "row";
+  direction?: "column" | "row" | "column-reverse";
   justify?:
     | "flex-start"
     | "center"
@@ -37,6 +37,7 @@ export const Flex = ({
   const classnames = classNames({
     "flex-container": true,
     "flex-column": direction === "column",
+    "flex-column-reverse": direction === "column-reverse",
     "flex-row": direction === "row",
   });
 

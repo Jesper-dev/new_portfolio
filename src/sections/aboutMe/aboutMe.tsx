@@ -1,10 +1,9 @@
 import { Flex } from "../../components/flex/flex";
+import { useGetDevice } from "../../hooks/useGetDevice";
 import "./aboutMe.scss";
 
-import { useIsMobile } from "../../hooks/useIsMobile";
-
 export const AboutMe = () => {
-  const device = useIsMobile();
+  const device = useGetDevice();
   return (
     <Flex direction="column" height="100%">
       <Flex
