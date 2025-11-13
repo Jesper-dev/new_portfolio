@@ -4,6 +4,15 @@ export type Project = {
   description: string;
 };
 
+export const notFinishedProjectsList: Project[] = [
+  {
+    name: "Battle royale coding",
+    url: "https://github.com/Jesper-dev/programmingbr",
+    description:
+      "Tried to make a battle royale game where you code to survive. Got bored of it and stopped.",
+  },
+];
+
 export const newProjectsList: Project[] = [
   {
     name: "League auto chat",

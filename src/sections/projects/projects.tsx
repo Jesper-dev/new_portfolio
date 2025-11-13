@@ -1,8 +1,18 @@
 import { Flex } from "../../components/flex/flex";
 import { ProjectComp } from "./project";
-import { oldProjectsList, newProjectsList } from "./projectHelper";
+import {
+  oldProjectsList,
+  newProjectsList,
+  notFinishedProjectsList,
+} from "./projectHelper";
 
 export const Projects = () => {
+  const notFinishedProjects = () => {
+    return notFinishedProjectsList.map((project, i) => {
+      return <ProjectComp project={project} key={i} />;
+    });
+  };
+
   const getNewProjects = () => {
     return newProjectsList.map((project, i) => {
       return <ProjectComp project={project} key={i} />;
@@ -16,6 +26,10 @@ export const Projects = () => {
   };
   return (
     <Flex direction="column" height="100%" gap="16px">
+      <Flex direction="column" width="100%">
+        <p className="header">Not Finished Projects</p>
+        {notFinishedProjects()}
+      </Flex>
       <Flex direction="column" width="100%">
         <p className="header">New Projects</p>
         {getNewProjects()}
